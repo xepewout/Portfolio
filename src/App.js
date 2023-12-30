@@ -21,7 +21,7 @@ function App() {
 function HomePage() {
   return (
     <div>
-      <h1>Welcome to My Portfolio</h1>
+      <h1>Welcome</h1>
       {/* Additional content */}
     </div>
   );
@@ -35,7 +35,7 @@ function ImagesPage() {
           key={index} 
           src={`https://nixon-s610.s3.us-west-1.amazonaws.com/DSCN` + String(index + 1).padStart(4, '0') + `.JPG`} 
           alt={`DOES NOT EXIST ${index}`} 
-          style={{ margin: '5px', width: '600px'}} 
+          style={{ margin: '5px', width: '620px'}} 
         />
       ))}
     </div>
