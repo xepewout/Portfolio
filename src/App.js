@@ -35,7 +35,7 @@ function ImagesPage() {
           key={index} 
           src={`https://nixon-s610.s3.us-west-1.amazonaws.com/DSCN` + String(index + 1).padStart(4, '0') + `.JPG`} 
           alt={`DOES NOT EXIST ${index}`} 
-          style={{ margin: '5px', width: '630px'}} 
+          style={{ margin: '5px', width: '600px'}} 
         />
       ))}
     </div>
