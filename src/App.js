@@ -30,17 +30,21 @@ function HomePage() {
 function ImagesPage() {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', background: 'white' }}>
-      {Array.from({ length: 100 }).map((_, index) => (
-        <img 
-          key={index} 
-          src={`https://nixon-s610.s3.us-west-1.amazonaws.com/DSCN` + String(index + 1).padStart(4, '0') + `.JPG`} 
-          alt={`DOES NOT EXIST ${index}`} 
-          style={{ margin: '5px', width: '620px'}} 
-        />
-      ))}
+      {Array.from({ length: 68 }).map((_, index, arr) => {
+        const reverseIndex = arr.length - 1 - index;
+        return (
+          <img 
+            key={reverseIndex} 
+            src={`https://nixon-s610.s3.us-west-1.amazonaws.com/DSCN` + String(reverseIndex + 1).padStart(4, '0') + `.JPG`} 
+            alt={`DOES NOT EXIST ${reverseIndex}`} 
+            style={{ margin: '5px', width: '620px'}} 
+          />
+        );
+      })}
     </div>
   );
 }
+
 
 
 export default App;
