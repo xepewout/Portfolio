@@ -30,7 +30,7 @@ function HomePage() {
 function ImagesPage() {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', background: 'white' }}>
-      {Array.from({ length: 68 }).map((_, index, arr) => {
+      {Array.from({ length: 109 }).map((_, index, arr) => {
         const reverseIndex = arr.length - 1 - index;
         return (
           <img 
