@@ -58,7 +58,7 @@ function HomePage() {
 }
 
 function ImagesPage() {
-  const totalImages = 160;
+  const totalImages = 201;
   const imagesPerPage = 50;
   const [currentPage, setCurrentPage] = useState(1);
 
