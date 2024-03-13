@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.intro{
+  font-family: slab;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p{
+  color: green;
+}
+
+.link{
+  padding-left: 10px;
+}
