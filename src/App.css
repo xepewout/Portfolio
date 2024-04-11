@@ -50,3 +50,42 @@ p{
 .link{
   padding-left: 10px;
 }
+
+/* App.css */
+
+/* Grid container for images */
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  background: white;
+  padding: 5px;
+}
+
+.media-image, .media-video {
+  width: 100%;
+  height: auto;
+  margin: 5px 0; /* Adjusted margin for consistency */
+}
+
+/* Responsive Pagination */
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 10px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: black; /* Example color */
+}
+
+.pagination a.current-page {
+  text-decoration: underline;
+}
+
